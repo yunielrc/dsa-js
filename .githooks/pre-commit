@@ -3,4 +3,4 @@
 set -eu
 
 # lint:fix && test
-npm run validate
+npm run validate:fix
