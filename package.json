@@ -1,0 +1,52 @@
+{
+  "name": "adsbot-revolico",
+  "version": "0.0.1",
+  "description": "auto-post ads on revolico",
+  "main": "src/app.js",
+  "private": "true",
+  "scripts": {
+    "launch": "node src/app.js",
+    "lint": "eslint src __tests__",
+    "lint:fix": "eslint --fix src __tests__",
+    "test": "jest __tests__",
+    "validate": "npm run lint:fix && npm run test",
+    "commit": "cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunielrc/dsa-js.git"
+  },
+  "keywords": [
+    "data",
+    "structures",
+    "algorithms"
+  ],
+  "author": "yunielrc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yunielrc/dsa-js/issues"
+  },
+  "homepage": "https://github.com/yunielrc/dsa-js#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@commitlint/prompt-cli": "^12.1.4",
+    "@types/jest": "^26.0.23",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-security": "^1.4.0",
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "dotenv": "^9.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
