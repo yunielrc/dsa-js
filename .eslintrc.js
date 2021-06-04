@@ -10,13 +10,19 @@ module.exports = {
     'airbnb-base',
     'plugin:security/recommended',
   ],
+  parser: '@babel/eslint-parser',
   parserOptions: {
+    babelOptions: {
+      configFile: './.babel-eslintrc.json',
+    },
     ecmaVersion: 12,
   },
   rules: {
+    'no-plusplus': 'off',
   },
   plugins: [
     'jest',
     'security',
+    '@babel',
   ],
 };
