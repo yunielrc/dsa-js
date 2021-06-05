@@ -5,18 +5,34 @@
   ],
   "configurations": [
     {
-      "name": "Launch via NPM",
       "type": "node",
       "request": "launch",
-      "runtimeExecutable": "npm",
+      "name": "Jest All",
+      "runtimeExecutable": "npx",
       "runtimeArgs": [
-        "run",
-        "launch"
+        "jest",
+        "--runInBand"
       ],
-      "skipFiles": [
-        "${workspaceFolder}/node_modules/**/*.js",
-        "<node_internals>/**"
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest Current File",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "jest",
+        "${relativeFile}"
       ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Node",
+      "program": "${file}"
     }
   ]
 }
