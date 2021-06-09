@@ -1,4 +1,4 @@
-const DoubleLinkedList = require('../../src/datastructures/DoublyLinkedList');
+const DoubleLinkedList = require('./DoublyLinkedList');
 
 /**
  * @returns {DoubleLinkedList}
